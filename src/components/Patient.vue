@@ -9,7 +9,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
+  <div
+    class="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl animate__animated animate__backInUp"
+  >
     <p class="font-bold mb-3 text-gray-700 uppercase">
       ID: {{ patient.id }}
       <span class="font-normal normal-case"> </span>
@@ -59,3 +61,19 @@ defineProps({
     </div>
   </div>
 </template>
+
+<style>
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+</style>
