@@ -62,7 +62,7 @@ const editing = computed(() => {
     </p>
     <form
       @submit.prevent="handleSubmit"
-      class="bg-white p-10 shadow-md rounded-lg mx-5"
+      class="bg-white p-10 shadow-md rounded-lg mx-5 animate__animated animate__backInLeft"
     >
       <div class="mb-5">
         <label for="pet" class="block text-gray-700 font-bold uppercase"
